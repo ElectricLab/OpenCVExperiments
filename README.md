@@ -22,3 +22,10 @@ Simple test: rpicam-hello -t 0
 
 Take a sample still image: rpicam-still -o test.jpg
 
+# Programs
+```
+g++ face_detect_fast.cpp -o face_detect_fast \
+    `pkg-config --cflags --libs opencv4` \
+    `pkg-config --cflags --libs libcamera` \
+    -llccv
+```
